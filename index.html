@@ -64,8 +64,8 @@
                         <p style="display: inline;color: #F5930E;">Search By</p>
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Title</a></li>
-                        <li><a class="dropdown-item" href="#">Author</a></li>
+                        <li><a onclick="isTitle()" class="dropdown-item" href="#">Title</a></li>
+                        <li><a onclick="isAuthor()" class="dropdown-item" href="#">Author</a></li>
                         <li>
 
                         </li>
@@ -74,7 +74,7 @@
 
             </ul>
             <input id="search-field" type="text">
-            <button id="search-btn" class=""><i class="lni lni-search-alt"
+            <button onclick="loadData()" id="search-btn" class=""><i class="lni lni-search-alt"
                     style="color: white;font-weight: 700;"></i></button>
         </div>
         <!-- Search Area end -->
