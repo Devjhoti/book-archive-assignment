@@ -26,7 +26,7 @@ function getSearchValue() {
 function authorUrl(name) {
     // author=true;
     if (author === true) {
-        const url = `http://openlibrary.org/search.json?author=${name}`;
+        const url = `https://openlibrary.org/search.json?author=${name}`;
         // console.log(url);
         urlData = url;
     }
@@ -35,7 +35,7 @@ function authorUrl(name) {
 function titleUrl(book) {
     // title=true;
     if (title === true) {
-        const url = `http://openlibrary.org/search.json?title=${book}`;
+        const url = `https://openlibrary.org/search.json?title=${book}`;
         // console.log(url);
         urlData = url;
     }
