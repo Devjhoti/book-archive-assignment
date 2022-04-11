@@ -5,6 +5,7 @@
 body{
     background-color: #E1DCC5;
     font-family: 'Poppins', sans-serif;
+    
 }
 .bg-light{
     background-color: #E1DCC5 !important ;
@@ -40,15 +41,51 @@ main{
     left: -5px;
     /* top:-1px; */
 }
-/* .navbar-toggler{
-    color: #ED5C09!important;
-} */
+#author-info{
+    /* display: flex; */
+    padding-top: 60px;
+    width: 69%;
+    margin: auto;
+    border-bottom: 7px dashed khaki;
+}
+#author-info img{
+    border-radius: 50%;
+}
+.author-details{
+    display: flex;
+    align-items: ;
+}
+#bio{
+    padding-left: 20px;
+    text-align: justify;
+}
+#results{
+    padding-left: 110px;
+}
+.book-item img{
+    width: 100%;
+}
+.book-item{
+    margin: 20px 5px;
+    padding: 15px ;
+    height: 300px;
+    
+    overflow: hidden;
+    border: 0px solid black;
+    box-shadow: 0px 0px 40px 5px lightgray;
+    background-color: aliceblue;
+}
 footer{
     width: 993px;
     margin: auto;
     margin-top: 40px;
     height: 200px;
     background-color: #85653426;
+}
+.check{
+    color: green;
+    font-weight: 900;
+    display: none;
 }
 @media only screen and (max-width:992px) {
     #top-section{

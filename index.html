@@ -33,7 +33,7 @@
                     <img src="./images/logo-edited.png" alt="">
 
                 </a>
-                <h2>BOOkShOOk.com</h2>
+                <h2 style="cursor: pointer;">BOOkShOOk.com</h2>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -52,7 +52,8 @@
     </section>
     <!-- Top Section End -->
 
-    <main class=" bg-white pt-5 rounded">
+    <main id="main" class=" bg-white pt-5 rounded">
+        
         <h1 class="text-center">Search your favorite Books!</h1>
         <!-- Search Area start-->
         <div class="mt-4" style="width: fit-content;margin: auto;">
@@ -64,8 +65,8 @@
                         <p style="display: inline;color: #F5930E;">Search By</p>
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a onclick="isTitle()" class="dropdown-item" href="#">Title</a></li>
-                        <li><a onclick="isAuthor()" class="dropdown-item" href="#">Author</a></li>
+                        <li><a onclick="isTitle()" class="dropdown-item" href="#"><i id="title-check" class="lni lni-checkmark-circle check"></i>Title</a></li>
+                        <li><a onclick="isAuthor()" class="dropdown-item" href="#"><i id="author-check" class="lni lni-checkmark-circle check"></i>Author</a></li>
                         <li>
 
                         </li>
@@ -77,11 +78,17 @@
             <button onclick="loadData()" id="search-btn" class=""><i class="lni lni-search-alt"
                     style="color: white;font-weight: 700;"></i></button>
         </div>
-        <!-- Search Area end -->
 
+        <div id="preloader" style="width: fit-content;margin: auto;display: none;">
+            <img src="./images/Magnify-1s-200px.gif" alt="">
+        </div>
+        <!-- Search Area end -->
+        <div id="author-info">
+
+        </div>
         <!-- Result Areas start-->
-        <div class="mt-4">
-            <div class="row row-cols-6 container">
+        <div  class="mt-4">
+            <div style="width: 100%;margin: auto;" id="results" class="row row-cols-6 container">
                 
             </div>
         </div>
@@ -95,6 +102,7 @@
             </p>
         </div>
     </footer>
+    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
